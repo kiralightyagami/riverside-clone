@@ -1,17 +1,20 @@
 {
-  "name": "api",
+  "name": "auth",
   "module": "index.ts",
   "type": "module",
   "private": true,
   "devDependencies": {
     "@types/bun": "latest"
   },
-  "dependencies": {
-    "@repo/db": "*",
-    "@types/express": "^5.0.6",
-    "express": "^5.2.1"
-  },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "@repo/db": "*",
+    "better-auth": "^1.4.13",
+    "dotenv": "^17.2.3"
+  },
+  "exports": {
+    ".": "./src/index.ts"
   }
 }
